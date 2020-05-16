@@ -1,0 +1,178 @@
+.offer 
+    &-block 
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding: 70px 0
+        &__circle 
+            background: url(../img/product/circle.png) no-repeat
+            position: absolute
+            width: 680px
+            height: 680px
+            top: 5%
+            left: -5.5%
+        &__circle-1
+            background: url(../img/product/circle-1.png) no-repeat
+            position: absolute
+            width: 77px
+            height: 77px
+            top: 10%
+            left: 37%
+        &__circle-2
+            background: url(../img/product/circle-2.png) no-repeat
+            position: absolute
+            width: 148px
+            height: 148px
+            top: 76%
+            left: -2%
+        &__figures-1
+            background: url(../img/offer/figures.png) no-repeat
+            position: absolute
+            width: 530px
+            height: 450px
+            top: 9%
+            left: -50%
+        &__figures-2
+            background: url(../img/offer/figures.png) no-repeat
+            position: absolute
+            width: 530px
+            height: 450px
+            top: 70%
+            left: 106%
+        &__image 
+            width: 50%
+            padding-left: 98px
+        &__img 
+            position: relative
+            max-width: 82%
+    &-form 
+        max-width: 537px
+        width: 100%
+        max-height: 567px
+        border: 10px solid $form-color
+        text-align: center
+        display: flex
+        flex-direction: column
+        align-items: center
+        &__title 
+            +bold
+            font-size: 36px
+            text-transform: uppercase
+            line-height: 1.2
+            margin: 63px 30px 61px 30px
+            & span 
+                color: $main-color
+        &__input 
+            width: 310px
+            background: none
+            border: none
+            border-bottom: 3px solid #adadad
+            height: 64px
+            font-size: 14px
+            color: #767676
+            padding-left: 10px
+            margin-bottom: 10px
+        &__button 
+            width: 310px
+            margin: 30px 0 17px
+        &__description 
+            width: 310px
+            font-size: 12px
+            line-height: 1.2
+            margin-bottom: 50px
+        input::-webkit-input-placeholder 
+            color: #767676 !important
+        input:-moz-placeholder
+            color: #767676 !important
+        input::-moz-placeholder
+            color: #767676 !important
+        input:-ms-input-placeholder 
+            color: #767676 !important
+
+@media screen and ( max-width: 1200px )
+    .offer 
+        &-block 
+            flex-direction: column
+            &__image 
+                width: 100%
+                padding-left: 0
+                justify-content: center
+                display: flex
+                padding-top: 40px
+                padding-bottom: 100px
+            &__circle 
+                top: 0
+                left: auto
+            &__circle-1
+                top: 3%
+                left: 69%
+            &__circle-2
+                top: 38%
+                left: 11%
+            &__figures-1, &__figures-2
+                display: none
+            &__img 
+                max-width: 100%
+        &-form 
+            margin-top: 80px
+@media screen and ( max-width: 768px )
+    .offer 
+        &-block 
+            &__circle-1
+                left: 76%
+            &__circle-2
+                top: 39%
+                left: 0
+@media screen and ( max-width: 600px )
+    .offer 
+        &-block 
+            &__circle-1
+                left: 86%
+            &__circle-2
+                top: 38%
+                left: -20%
+        &-form 
+            &__title 
+                font-size: 25px
+                margin: 50px 30px
+            &__input, &__button, &__description
+                width: 220px
+@media screen and ( max-width: 440px )
+    .offer 
+        &-form 
+            &__title 
+                font-size: 23px
+@media screen and ( max-width: 425px )
+    .offer 
+        &-block 
+            &__circle-1
+                left: 86%
+            &__circle-2
+                top: 41%
+                left: -25%
+        &-form 
+            &__title 
+                font-size: 20px
+                margin: 50px 0 30px
+@media screen and ( max-width: 360px )
+    .offer 
+        &-block 
+            &__circle-2 
+                left: -40%
+@media screen and ( max-width: 359px )
+    .offer 
+        &-block 
+            &__circle
+                top: 0
+            &__circle-1
+                display: none
+            &__circle-2
+                display: none
+        &-form 
+            &__title 
+                margin: 50px 8px 30px
+@media screen and ( max-width: 320px )
+    .offer 
+        &-block 
+            &__circle 
+                top: -37px

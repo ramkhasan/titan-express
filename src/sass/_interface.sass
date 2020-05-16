@@ -7,10 +7,11 @@ body
     height: 100%
     margin: 0
     font-size: 18px
-    line-height: 1.2
+    line-height: 1.4
     color: $text-color
 p 
     margin: 0
+    margin-bottom: 17px
 img 
     max-width: 100%
 main 
@@ -30,6 +31,7 @@ main
         position: relative
         max-width: 702px
         padding-left: 98px
+        padding-bottom: 50px
         &:before 
             content: ''
             width: 62px 
@@ -45,10 +47,17 @@ main
     text-decoration: none
     color: $hero-color
     background-image: linear-gradient(90deg, $m-btn-color 0%, $m-btn-color-2 100%)
-    box-shadow: 0px 2px 4px 0px rgba($black-color, 0.28)
+    box-shadow: 0px 5px 10px rgba($black-color, 0.28)
     font-size: 16px
     text-transform: uppercase
     cursor: pointer
+    transition: all .3s
+    &:hover
+        box-shadow: 0px 15px 25px -5px rgba($black-color, 0.28)
+        transform: scale(1.05)
+    &:active
+        box-shadow: 0px 4px 8px rgba($black-color, 0.18)
+        transform: scale(.98)
 .second-button 
     padding: 17px 23px
     border: none
@@ -57,10 +66,17 @@ main
     text-decoration: none
     color: $hero-color
     background-image: linear-gradient(180deg, $s-btn-color 0%, $s-btn-color-2 100%)
-    box-shadow: 0px 2px 4px 0px rgba($black-color, 0.28)
+    box-shadow: 0px 5px 10px rgba($black-color, 0.28)
     font-size: 14px
     text-transform: uppercase
     cursor: pointer
+    transition: all .3s
+    &:hover
+        box-shadow: 0px 15px 25px -5px rgba($black-color, 0.28)
+        transform: scale(1.05)
+    &:active
+        box-shadow: 0px 4px 8px rgba($black-color, 0.18)
+        transform: scale(.98)
  
 @media (max-width: 1200px)
     .container

@@ -74,19 +74,18 @@
             font-size: 12px
             line-height: 1.2
             margin-bottom: 50px
-input::-webkit-input-placeholder 
-    color: $hero-color !important
-input:-moz-placeholder
-    color: $hero-color !important
-input::-moz-placeholder
-    color: $hero-color !important
-input:-ms-input-placeholder 
-    color: $hero-color !important
+        input::-webkit-input-placeholder 
+            color: $hero-color !important
+        input:-moz-placeholder
+            color: $hero-color !important
+        input::-moz-placeholder
+            color: $hero-color !important
+        input:-ms-input-placeholder 
+            color: $hero-color !important
 
 @media screen and ( max-width: 1200px )
     .hero 
         &-canister 
-            // left: 360px
             left: 47%
         &-block 
             flex-direction: column
@@ -99,8 +98,6 @@ input:-ms-input-placeholder
             margin-top: 80px
 @media screen and ( max-width: 768px )
     .hero 
-        &-canister 
-            // left: 263px
         &-block 
             padding: 65px 0 80px
         &-text 
@@ -143,3 +140,8 @@ input:-ms-input-placeholder
             &__title 
                 font-size: 20px
                 margin: 50px 0 30px
+@media screen and ( max-width: 320px )
+    .hero 
+        &-form 
+            &__title 
+                margin: 50px 8px 30px

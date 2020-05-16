@@ -1,0 +1,80 @@
+.production 
+    background-color: $bg-color-2
+    &-title 
+        &:before 
+            background: $text-color
+    &-gallery 
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        margin-bottom: 27px
+        &__item 
+            margin: 10px
+        &__video 
+            position: relative
+        &__button 
+            position: absolute
+            background: none
+            width: 65px
+            height: 65px
+            border: none
+            border-radius: 50%
+            outline: none
+            cursor: pointer
+            top: 40%
+            left: 41%
+            padding: 0
+            transition: all .3s
+            &:hover
+                transform: scale(1.1)
+            &:active
+                transform: scale(.98)
+            animation: radial-pulse 1s infinite
+            @keyframes radial-pulse 
+                0% 
+                    box-shadow: 0 0 0 0px rgba($hero-color, 0.5)
+                100% 
+                    box-shadow: 0 0 0 40px rgba($hero-color, 0)
+    &-text 
+        &__block 
+            position: relative
+            height: 57vh
+            overflow: hidden
+            margin-bottom: 40px
+            &:after
+                content: ''
+                width: 100%
+                left: 0
+                position: absolute
+                height: 100px
+                bottom: 0
+                background: linear-gradient(to bottom,  rgba($bg-color-2,0) 0%,rgba($bg-color-2,1) 100%)
+            &.show:after 
+                opacity: 0
+        &__text
+            overflow: hidden
+    &-description_main
+        margin-bottom: 32px
+    &-button 
+        display: flex
+        margin: auto
+        padding: 17px 54px
+
+@media screen and ( max-width: 768px )
+    .production
+        &-title 
+            display: flex
+            justify-content: center
+@media screen and ( max-width: 500px )
+    .production
+        &-description 
+            font-size: 16px
+        &-gallery 
+            &__button 
+                left: 40%
+@media screen and ( max-width: 360px )
+    .production
+        &-gallery 
+            &__button 
+                top: 39%
+                left: 39%
