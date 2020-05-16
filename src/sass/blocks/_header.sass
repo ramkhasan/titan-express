@@ -1,0 +1,51 @@
+.header
+    position: relative
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 22px
+    &-logo 
+        display: flex
+        align-items: center
+        max-width: 536px
+        width: 100%
+        &__img 
+            display: flex
+            padding-right: 15px
+        &__text 
+            font-size: 14px
+    &__contacts 
+        display: flex
+.contacts 
+    &__phone 
+        display: flex
+        align-items: center
+        padding-right: 16px
+        &-img 
+            padding-right: 5px
+        &-tel 
+            +bold
+            color: $hero-color 
+            text-decoration: none
+        
+@media screen and ( max-width: 1200px )
+    .header 
+        flex-direction: column
+        &-logo 
+            padding-bottom: 20px
+            
+@media screen and ( max-width: 768px )
+    .header 
+        &-logo 
+            flex-direction: column
+            max-width: 298px
+            text-align: center
+            &__img
+                padding-right: 0
+                margin-bottom: 10px
+        &__contacts 
+            flex-direction: column
+    .contacts 
+        &__phone 
+            padding-right: 0
+            padding-bottom: 20px

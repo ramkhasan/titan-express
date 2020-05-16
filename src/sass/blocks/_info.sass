@@ -1,0 +1,57 @@
+.info 
+    background: url(../img/info/info-bg.jpg) no-repeat
+    color: $hero-color
+    background-size: cover
+    background-position: center
+    background-size: cover
+    overflow: hidden
+    padding-bottom: 38px
+    &-title 
+        position: relative
+        margin-top: 11px
+        &:before 
+            background: $hero-color
+    &-block 
+        line-height: 1.4
+        padding-left: 98px
+        padding-top: 36px
+        max-width: 970px
+        &__text 
+            font-size: 19px
+            margin: 17px 0
+        &__composition 
+            display: flex 
+            flex-wrap: wrap
+            justify-content: space-between
+            &-title 
+                padding-top: 10px
+                padding-bottom: 5px
+                +bold
+            &-item 
+                width: 375px
+                padding-bottom: 24px
+                & span 
+                    +bold 
+                    font-size: 23px
+
+@media screen and ( max-width: 1200px )
+    .info 
+        &-block 
+            padding-left: 126px
+            &__composition 
+                &-item 
+                    padding-bottom: 10px
+@media screen and ( max-width: 768px )
+    .info
+        &-block 
+            padding-left: 0
+@media screen and ( max-width: 500px )
+    .info 
+        &-block 
+            &__text 
+                font-size: 16px
+            &__composition 
+                &-item 
+                    font-size: 16px
+                    & span 
+                        font-size: 20px

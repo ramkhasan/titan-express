@@ -1,0 +1,119 @@
+.product 
+    background-color: $bg-color
+    padding-top: 74px
+    &-title 
+        position: relative
+        &:before 
+            background: $text-color
+    &-block 
+        display: flex 
+        align-items: center
+        padding-top: 46px
+        &__circle 
+            background: url(../img/product/circle.png) no-repeat
+            position: absolute
+            width: 680px
+            height: 680px
+            top: 42px
+            left: -76px
+        &__circle-1
+            background: url(../img/product/circle-1.png) no-repeat
+            position: absolute
+            width: 77px
+            height: 77px
+            top: 72px
+            left: 402px
+        &__circle-2
+            background: url(../img/product/circle-2.png) no-repeat
+            position: absolute
+            width: 148px
+            height: 148px
+            top: 547px
+            left: -34px
+        &__image 
+            width: 44.3%
+            padding-left: 98px
+        &__img 
+            position: relative
+            max-width: 82%
+        &__text 
+            width: 48%
+            position: relative
+        &__title 
+            +bold
+            font-size: 37px 
+            color: $main-color 
+            padding-bottom: 22px
+        &__description 
+            font-size: 14px
+            font-weight: bold
+            padding-bottom: 20px
+            & span 
+                +bold 
+                font-size: 17px
+    &-button 
+            position: relative
+            left: 44%
+            margin-top: 27px
+            margin-bottom: 38px
+            padding: 16px 65px
+
+@media screen and ( max-width: 1200px )
+    .product 
+        &-block 
+            flex-direction: column
+            &__image 
+                width: 100%
+                padding-left: 0
+                justify-content: center
+                display: flex
+                padding-top: 40px
+                padding-bottom: 100px
+            &__circle 
+                top: 3%
+                left: auto
+            &__circle-1
+                top: 5%
+                left: 69%
+            &__circle-2
+                top: 47%
+                left: 11%
+            &__img 
+                max-width: 100%
+            &__text 
+                width: 100%
+        &-button 
+            left: 0
+@media screen and ( max-width: 768px )
+    .product 
+        &-block 
+            &__circle-1
+                left: 76%
+            &__circle-2
+                top: 43%
+                left: -7%
+@media screen and ( max-width: 600px )
+    .product 
+        &-block 
+            &__circle-1
+                left: 86%
+            &__circle-2
+                top: 38%
+                left: -20%
+@media screen and ( max-width: 425px )
+    .product 
+        &-block 
+            &__circle-1
+                left: 86%
+            &__circle-2
+                top: 36%
+                left: -44%
+@media screen and ( max-width: 359px )
+    .product 
+        &-block 
+            &__circle
+                top: 0
+            &__circle-1
+                display: none
+            &__circle-2
+                display: none

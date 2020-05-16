@@ -1,0 +1,40 @@
+.advantages 
+    &-title 
+        &:before 
+            background: $text-color
+    &-block 
+        display: flex
+        flex-wrap: wrap 
+        justify-content: space-between
+        max-width: 945px
+        padding-top: 50px
+        margin: auto 
+.advantage 
+    display: flex
+    align-items: center
+    padding-bottom: 30px
+    &-img 
+        width: 90px
+        display: flex
+        justify-content: center
+        margin-right: 26px
+    &-text 
+        +bold
+        max-width: 300px
+
+@media screen and ( max-width: 1200px )
+    .advantages 
+        &-block 
+            flex-direction: column 
+            padding-left: 126px
+@media screen and ( max-width: 768px )
+    .advantages
+        &-block 
+            padding-left: 0
+@media screen and ( max-width: 500px )
+    .advantage
+        &-img 
+            width: 70px
+        &-text 
+            font-size: 16px
+            max-width: 190px
