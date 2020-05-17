@@ -1,0 +1,131 @@
+.footer 
+    min-height: 558px
+    background: url(../img/footer/footer-bg.jpg) no-repeat
+    position: relative
+    background-position: center
+    background-size: cover
+    color: $hero-color
+    &-owners
+        background: url(../img/footer/owners.png) no-repeat
+        position: absolute
+        top: 21px
+        right: 0
+        width: 682px 
+        height: 537px
+        z-index: 1
+    &-circle
+        background: url(../img/product/circle.png) no-repeat
+        position: absolute
+        width: 680px
+        height: 680px
+        top: -27px
+        right: -45px
+        z-index: 0
+    &-block 
+        display: flex
+        flex-direction: column
+        padding-top: 71px
+        position: relative
+        z-index: 10
+        &__text 
+            padding-left: 35px
+            padding-bottom: 54px
+        &__documents 
+            padding-bottom: 33px
+    &-title
+        +med 
+        font-weight: bold
+        font-size: 32px
+        position: relative
+        margin: 0
+        padding-left: 0
+        &:before 
+            content: ''
+            position: absolute
+            background: $hero-color
+            width: 23px
+            height: 4px
+            top: 22px
+            left: -35px
+    &-subtitle 
+        +med 
+        font-weight: bold 
+        font-size: 21px
+        color: #073373
+        display: block
+        padding-bottom: 5px
+    &-phone 
+        padding-bottom: 14px
+        &__img 
+            width: 27px
+            margin-right: 10px
+        &__tel 
+            font-weight: bold
+            font-size: 48px
+            color: $hero-color
+            text-decoration: none
+    &-button 
+        padding: 16px 48px
+    &-documents 
+        &__title 
+            +med 
+            font-weight: bold
+            font-size: 21px 
+            padding-bottom: 13px
+        &__block 
+            width: 316px 
+            height: 50px
+            display: flex
+            flex-direction: column
+            flex-wrap: wrap
+            font-size: 12px
+        &__link
+            color: $hero-color
+    &-info 
+        font-size: 12px
+        display: flex 
+        justify-content: space-between
+        border-top: 1px solid #6ea2ce
+        padding-top: 25px
+        padding-bottom: 25px
+        z-index: 10
+        position: relative
+        &__privacy 
+            color: $hero-color
+
+@media screen and ( max-width: 1200px )
+    .footer 
+        &-owners 
+            right: -200px 
+        &-circle 
+            right: -245px
+        &-phone 
+            &__img 
+                width: 22px
+            &__tel 
+                font-size: 35px
+@media screen and ( max-width: 786px )
+    .footer 
+        &-owners 
+            right: -300px 
+        &-circle 
+            right: -345px
+@media screen and ( max-width: 560px )
+    .footer 
+        &-info 
+            flex-direction: column
+            &__copy
+                padding-bottom: 15px
+@media screen and ( max-width: 425px )
+    .footer 
+        &-owners 
+            display: none
+        &-circle 
+            display: none
+        &-phone 
+            &__img 
+                width: 18px
+            &__tel 
+                font-size: 23px
+        &-button 
+            padding: 16px 44px

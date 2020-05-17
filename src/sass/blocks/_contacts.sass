@@ -1,0 +1,124 @@
+.contacts 
+    position: relative
+    padding: 0
+    &-blocks 
+        position: relative
+        width: 1140px
+        height: 1174px
+        margin: auto
+    &-block
+        height: 587px
+        &__1, &__2
+            position: absolute
+            max-width: 555px
+            height: 587px
+            padding: 80px 90px 90px 67px
+            color: $hero-color
+            background-color: rgba($black-color, 0.8)
+        &__1
+            top: 0
+            left: 0
+            z-index: 10
+        &__2 
+            top: 587px
+            right: 0
+            z-index: 10
+        &__title 
+            +med
+            font-weight: bold
+            font-size: 36px
+            text-transform: uppercase
+            padding-bottom: 29px
+        &__img 
+            min-width: 30px 
+            display: flex
+            justify-content: center
+            padding-top: 5px
+            margin-right: 10px
+        &__phone, &__mode, &__address, &__email
+            display: flex
+            padding-bottom: 20px
+            align-items: flex-start
+        &__text 
+            & span 
+                +med
+                font-weight: bold
+                font-size: 19px
+        &__clock 
+            +med
+            font-weight: bold
+            font-size: 24px
+        &__tel
+            +med
+            font-weight: bold
+            font-size: 25px
+            color: $hero-color
+            text-decoration: none
+        &__email 
+            color: $hero-color 
+            text-decoration: none
+.map-1-mob, .map-2-mob
+    display: none
+.map-1
+    position: absolute
+    width: 100%
+    top: 0
+.map-2
+    position: absolute
+    width: 100%
+    top: 587px
+
+@media (max-width: 1200px)
+    .contacts
+        &-blocks
+            max-width: 760px
+            height: 1440px
+            width: 95%
+        &-block 
+            height: 720px
+            &__1, &__2
+                position: relative
+                margin: auto
+                padding: 70px
+                height: auto
+                top: 0
+    .map-1, .map-2
+        display: none
+    .map-1-mob
+        display: block
+        position: absolute
+        width: 100%
+        top: 0
+    .map-2-mob
+        display: block
+        position: absolute
+        width: 100%
+        top: 720px
+@media (max-width: 768px)
+    .contacts
+        &-blocks
+            max-width: 580px
+            width: 90%
+        &-block 
+            &__title 
+                font-size: 30px
+@media screen and ( max-width: 500px )
+    .contacts 
+        &-block 
+            font-size: 16px
+            &__title 
+                font-size: 25px
+            &__1, &__2
+                padding: 36px
+                margin: auto
+            &__tel, &__clock
+                font-size: 19px
+            &__text 
+                & span 
+                    font-size: 16px
+@media (max-width: 425px)
+    .contacts
+        &-blocks
+            max-width: 320px
+            width: 90%
+            
