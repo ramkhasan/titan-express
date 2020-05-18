@@ -6,6 +6,10 @@
     background-size: cover
     color: $hero-color
     overflow: hidden
+    &-thanks
+        min-height: auto
+        background: none
+        color: $text-color
     &-canister
         position: absolute
         top: 0
@@ -20,6 +24,8 @@
         justify-content: space-between
     &-text 
         width: 50%
+        &-thanks 
+            width: 100%
         &__title 
             +black
             font-size: 48px
@@ -32,6 +38,8 @@
                 color: $main-color
             &-big 
                 font-size: 73px
+            &-thanks 
+                max-width: 100%
         &__subtitle 
             display: block
             max-width: 360px
@@ -40,7 +48,11 @@
             font-weight: bold
             line-height: 1.2
             padding-bottom: 20px
+            &-thanks 
+                max-width: 100%
+                padding-bottom: 60px
     &-form 
+        position: relative
         max-width: 537px
         width: 100%
         max-height: 567px
@@ -58,6 +70,7 @@
             & span 
                 color: $main-color
         &__input 
+            position: relative
             width: 310px
             background: none
             border: none
@@ -75,6 +88,8 @@
             font-size: 12px
             line-height: 1.2
             margin-bottom: 50px
+        &__link 
+            color: $hero-color
         input::-webkit-input-placeholder 
             color: $hero-color !important
         input:-moz-placeholder
@@ -95,6 +110,8 @@
             padding: 90px 0 90px
         &-text 
             width: 100%
+            &-thanks 
+                text-align: center
         &-form 
             margin-top: 80px
 @media screen and ( max-width: 768px )
@@ -120,9 +137,13 @@
                 font-size: 30px
                 &-big 
                     font-size: 46px
+                &-thanks 
+                    max-width: 100%
             &__subtitle
                 max-width: 300px
                 font-size: 17px
+                &-thanks 
+                    max-width: 100%
         &-form 
             margin-top: 135px
             &__title 

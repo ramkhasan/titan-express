@@ -68,6 +68,10 @@
   font-size: 14px;
 }
 
+.header-logo-thanks {
+  max-width: 570px;
+}
+
 .header__contacts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -93,6 +97,10 @@
   font-weight: bold;
   color: #ffffff;
   text-decoration: none;
+}
+
+.contacts__phone-thanks {
+  color: #141616;
 }
 
 @media screen and (max-width: 1200px) {
@@ -143,6 +151,12 @@
   overflow: hidden;
 }
 
+.hero-thanks {
+  min-height: auto;
+  background: none;
+  color: #141616;
+}
+
 .hero-canister {
   position: absolute;
   top: 0;
@@ -167,6 +181,10 @@
   width: 50%;
 }
 
+.hero-text-thanks {
+  width: 100%;
+}
+
 .hero-text__title {
   font-family: 'Montserrat Black', sans-serif;
   font-size: 48px;
@@ -178,11 +196,15 @@
 }
 
 .hero-text__title-red {
-  color: #e75c5c;
+  color: #ff4347;
 }
 
 .hero-text__title-big {
   font-size: 73px;
+}
+
+.hero-text__title-thanks {
+  max-width: 100%;
 }
 
 .hero-text__subtitle {
@@ -195,7 +217,13 @@
   padding-bottom: 20px;
 }
 
+.hero-text__subtitle-thanks {
+  max-width: 100%;
+  padding-bottom: 60px;
+}
+
 .hero-form {
+  position: relative;
   max-width: 537px;
   width: 100%;
   max-height: 567px;
@@ -222,10 +250,11 @@
 }
 
 .hero-form__title span {
-  color: #e75c5c;
+  color: #ff4347;
 }
 
 .hero-form__input {
+  position: relative;
   width: 310px;
   background: none;
   border: none;
@@ -247,6 +276,10 @@
   font-size: 12px;
   line-height: 1.2;
   margin-bottom: 50px;
+}
+
+.hero-form__link {
+  color: #ffffff;
 }
 
 .hero-form input::-webkit-input-placeholder {
@@ -285,6 +318,9 @@
   .hero-text {
     width: 100%;
   }
+  .hero-text-thanks {
+    text-align: center;
+  }
   .hero-form {
     margin-top: 80px;
   }
@@ -319,9 +355,15 @@
   .hero-text__title-big {
     font-size: 46px;
   }
+  .hero-text__title-thanks {
+    max-width: 100%;
+  }
   .hero-text__subtitle {
     max-width: 300px;
     font-size: 17px;
+  }
+  .hero-text__subtitle-thanks {
+    max-width: 100%;
   }
   .hero-form {
     margin-top: 135px;
@@ -478,6 +520,23 @@ main {
           transform: scale(0.98);
 }
 
+/* Стилизация сообщений об ошибке в полях формы */
+#username-error, #user_name-error, #user__name-error {
+  position: absolute;
+  width: 310px;
+  top: 254px;
+  font-size: 14px;
+  color: #ff4347;
+}
+
+#userphone-error, #user_phone-error, #user__phone-error {
+  position: absolute;
+  width: 310px;
+  top: 328px;
+  font-size: 14px;
+  color: #ff4347;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 760px;
@@ -501,9 +560,38 @@ main {
   }
 }
 
+@media screen and (max-width: 600px) {
+  #username-error, #user_name-error, #user__name-error {
+    top: 204px;
+    width: 220px;
+  }
+  #userphone-error, #user_phone-error, #user__phone-error {
+    top: 278px;
+    width: 220px;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .section-title {
     font-size: 29px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #username-error, #user_name-error, #user__name-error {
+    top: 198px;
+  }
+  #userphone-error, #user_phone-error, #user__phone-error {
+    top: 272px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #username-error, #user_name-error, #user__name-error {
+    top: 172px;
+  }
+  #userphone-error, #user_phone-error, #user__phone-error {
+    top: 246px;
   }
 }
 
@@ -511,6 +599,18 @@ main {
   .container {
     max-width: 320px;
     width: 90%;
+  }
+  .main-button {
+    padding: 17px 33px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #username-error, #user_name-error, #user__name-error {
+    top: 196px;
+  }
+  #userphone-error, #user_phone-error, #user__phone-error {
+    top: 270px;
   }
 }
 
@@ -600,6 +700,7 @@ main {
 }
 
 .info-block {
+  font-family: 'Montserrat Medium', sans-serif;
   line-height: 1.4;
   padding-left: 98px;
   max-width: 970px;
@@ -732,7 +833,7 @@ main {
 .product-block__title {
   font-family: 'Montserrat Bold', sans-serif;
   font-size: 37px;
-  color: #e75c5c;
+  color: #ff4347;
   padding-bottom: 22px;
 }
 
@@ -1051,6 +1152,7 @@ main {
 }
 
 .offer-form {
+  position: relative;
   max-width: 537px;
   width: 100%;
   max-height: 567px;
@@ -1077,7 +1179,7 @@ main {
 }
 
 .offer-form__title span {
-  color: #e75c5c;
+  color: #ff4347;
 }
 
 .offer-form__input {
@@ -1102,6 +1204,10 @@ main {
   font-size: 12px;
   line-height: 1.2;
   margin-bottom: 50px;
+}
+
+.offer-form__link {
+  color: #141616;
 }
 
 .offer-form input::-webkit-input-placeholder {
@@ -1137,7 +1243,7 @@ main {
     display: -ms-flexbox;
     display: flex;
     padding-top: 40px;
-    padding-bottom: 100px;
+    padding-bottom: 180px;
   }
   .offer-block__circle {
     top: 0;
@@ -1156,9 +1262,6 @@ main {
   }
   .offer-block__img {
     max-width: 100%;
-  }
-  .offer-form {
-    margin-top: 80px;
   }
 }
 
@@ -1182,14 +1285,14 @@ main {
   }
   .offer-form__title {
     font-size: 25px;
-    margin: 50px 30px;
+    margin: 50px 35px;
   }
   .offer-form__input, .offer-form__button, .offer-form__description {
     width: 220px;
   }
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 450px) {
   .offer-form__title {
     font-size: 23px;
   }
@@ -1204,6 +1307,7 @@ main {
     left: -25%;
   }
   .offer-form__title {
+    max-width: 350px;
     font-size: 20px;
     margin: 50px 0 30px;
   }
@@ -1608,6 +1712,38 @@ main {
   }
   .footer-button {
     padding: 16px 44px;
+  }
+}
+
+#privacy-modal {
+  max-width: 600px;
+  width: 100%;
+  border: 10px solid #0a54b4;
+  padding: 50px;
+}
+
+.privacy-modal__title {
+  font-family: 'Montserrat Bold', sans-serif;
+  font-size: 22px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+@media screen and (max-width: 425px) {
+  .privacy-modal__title {
+    font-size: 20px;
+  }
+  .privacy-modal__description {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .privacy-modal__title {
+    font-size: 16px;
+  }
+  .privacy-modal__description {
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=style.css.map */

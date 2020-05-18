@@ -77,6 +77,19 @@ main
     &:active
         box-shadow: 0px 4px 8px rgba($black-color, 0.18)
         transform: scale(.98)
+/* Стилизация сообщений об ошибке в полях формы */
+#username-error, #user_name-error, #user__name-error
+    position: absolute
+    width: 310px
+    top: 254px
+    font-size: 14px
+    color: $main-color
+#userphone-error, #user_phone-error, #user__phone-error
+    position: absolute
+    width: 310px
+    top: 328px
+    font-size: 14px
+    color: $main-color
  
 @media (max-width: 1200px)
     .container
@@ -94,11 +107,35 @@ main
             padding-left: 0
             &:before 
                 display: none 
+@media screen and ( max-width: 600px )
+    #username-error, #user_name-error, #user__name-error
+        top: 204px
+        width: 220px
+    #userphone-error, #user_phone-error, #user__phone-error
+        top: 278px
+        width: 220px
 @media screen and ( max-width: 500px )
     .section 
         &-title 
             font-size: 29px
+@media screen and ( max-width: 450px )
+    #username-error, #user_name-error, #user__name-error
+        top: 198px
+    #userphone-error, #user_phone-error, #user__phone-error
+        top: 272px
+@media screen and ( max-width: 425px )
+    #username-error, #user_name-error, #user__name-error
+        top: 172px
+    #userphone-error, #user_phone-error, #user__phone-error
+        top: 246px
 @media (max-width: 375px)
     .container
         max-width: 320px
         width: 90%
+    .main-button 
+        padding: 17px 33px
+@media screen and ( max-width: 320px )
+    #username-error, #user_name-error, #user__name-error
+        top: 196px
+    #userphone-error, #user_phone-error, #user__phone-error
+        top: 270px

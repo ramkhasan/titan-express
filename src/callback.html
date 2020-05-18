@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Антибактериальное средство для рук Вирус&Stop | Титан Экспресс</title>
+</head>
+<body>
+
+    <div class="callback-form__block" id="callback-form__block">
+        <!-- /.callback-form__title -->
+        <form action="mail-callback.php" method="POST" class="offer-form" enctype="multipart/form-data" id="callback-form">
+            <h3 class="offer-form__title">Заявка на обратный звонок</span></h3>
+            <input type="text" name="user__name" class="input offer-form__input" required placeholder="Ваше имя">
+            <input type="tel" name="user__phone" class="input offer-form__input phone" required placeholder="Ваш телефон">
+            <button class="second-button offer-form__button">Отправить</button>
+            <span class="offer-form__description">Нажимая на кнопку «Отправить» Вы даете согласие на обработку персональных данных, согласно <a href="javascript:;" data-fancybox data-type="ajax" data-src="privacy.html" class="offer-form__link">пользовательскому соглашению</a></span>
+        </form>
+        <!-- /.offer-form -->
+    </div>
+    <!-- /.callback-form__block -->
+    
+    <!-- Валидация формы -->
+    <script>
+        $(document).ready(function() {
+            $('#callback-form').validate({
+                rules: {
+                    user__name: {
+                        required: true,
+                        minlength: 2,
+                        maxlength: 15
+                    },
+                    user__phone: {
+                        required: true,
+                    }
+                },
+                messages: {
+                    user__name: {
+                        required: "Укажите Ваше имя",
+                        minlength: jQuery.validator.format("Осталось символов: {0}"),
+                        maxlength: jQuery.validator.format("Не больше 15 символов")
+                    },
+                    user__phone: {
+                        required: "Укажите Ваш телефон",
+                    }
+                },
+                errorElement: "div",
+                submitHandler: function(form) {
+                modal.addClass('modal_active');
+                }
+            });
+            // Маска для телефона
+            $('.phone').mask('+7 (999) 999-99-99');
+        });
+    </script>
+    
+</body>
+</html>

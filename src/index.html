@@ -29,7 +29,7 @@
                                 <a class="contacts__phone-tel" href="tel:88002228551">8 (800) 222-85-51</a>
                             </div>
                             <!-- /.contacts__phone -->
-                            <a class="second-button header__contacts-btn" href="#">Заказать звонок</a>
+                            <a class="second-button header__contacts-btn" href="javascript:;" data-fancybox="" data-type="ajax" data-src="callback.html" data-touch="false">Заказать звонок</a>
                         </div>
                         <!-- /.header__contacts -->
                     </div>
@@ -41,15 +41,15 @@
                     <div class="hero-text">
                         <h1 class="hero-text__title"><span class="hero-text__title-red">Вирус&Stop</span><br>Убивает <span class="hero-text__title-big">99,9%</span> вирусов<br>и бактерий</h1>
                         <span class="hero-text__subtitle">произведен согласно рекомендации Всемирной Организации Здравоохранения</span>
-                        <button class="main-button">Подробнее</button>
+                        <button class="main-button" href="javascript:;" data-fancybox="" data-type="ajax" data-src="callback.html" data-touch="false">Подробнее</button>
                     </div>
                     <!-- /.hero-text -->
                     <form action="mail.php" method="POST" class="hero-form" enctype="multipart/form-data" id="hero-form">
                         <h3 class="hero-form__title">Получить канистру<br>5 литров <span>бесплатно</span></h3>
-                        <input type="text" name="name" class="input hero-form__input" required placeholder="Ваше имя">
-                        <input type="tel" name="phone" class="input hero-form__input phone" required placeholder="Ваш телефон">
+                        <input type="text" name="username" class="input hero-form__input" required placeholder="Ваше имя">
+                        <input type="tel" name="userphone" class="input hero-form__input phone" required placeholder="Ваш телефон">
                         <button class="second-button hero-form__button">Получить</button>
-                        <span class="hero-form__description">Нажимая на кнопку «Получить» Вы даете согласие на обработку персональных данных, согласно пользовательскому соглашению</span>
+                        <span class="hero-form__description">Нажимая на кнопку «Получить» Вы даете согласие на обработку персональных данных, согласно <a class="hero-form__link" href="javascript:;" data-fancybox data-type="ajax" data-src="privacy.html">пользовательскому соглашению</a></span>
                     </form>
                     <!-- /.hero-form -->
                 </div>
@@ -157,7 +157,7 @@
                     <!-- /.product-block__text -->
                 </div>
                 <!-- /.product-block -->
-                <button class="main-button product-button">Купить</button> 
+                <button class="main-button product-button" href="javascript:;" data-fancybox="" data-type="ajax" data-src="callback.html" data-touch="false">Купить</button> 
                 <!-- /.main-button -->
             </div>
             <!-- /.container -->
@@ -240,12 +240,12 @@
                         <img class="offer-block__img" src="img/product/product.png" alt="Продукт">
                     </div>
                     <!-- /.offer-block__image -->
-                    <form action="mail.php" method="POST" class="offer-form" enctype="multipart/form-data" id="offer-form">
+                    <form action="mail-offer.php" method="POST" class="offer-form" enctype="multipart/form-data" id="offer-form">
                         <h3 class="offer-form__title">Получить канистру<br>5 литров <span>бесплатно</span></h3>
-                        <input type="text" name="name" class="input offer-form__input" required placeholder="Ваше имя">
-                        <input type="tel" name="phone" class="input offer-form__input phone" required placeholder="Ваш телефон">
+                        <input type="text" name="user_name" class="input offer-form__input" required placeholder="Ваше имя">
+                        <input type="tel" name="user_phone" class="input offer-form__input phone" required placeholder="Ваш телефон">
                         <button class="second-button offer-form__button">Получить</button>
-                        <span class="offer-form__description">Нажимая на кнопку «Получить» Вы даете согласие на обработку персональных данных, согласно пользовательскому соглашению</span>
+                        <span class="offer-form__description">Нажимая на кнопку «Получить» Вы даете согласие на обработку персональных данных, согласно <a href="javascript:;" data-fancybox data-type="ajax" data-src="privacy.html" class="offer-form__link">пользовательскому соглашению</a></span>
                     </form>
                     <!-- /.offer-form -->
                 </div>
@@ -368,17 +368,17 @@
                             <img class="footer-phone__img" src="img/hero/phone.svg" alt="Телефон">
                             <a class="footer-phone__tel" href="tel:88002228551">+7 (800) 222-85-51</a>
                         </div>
-                        <button class="main-button footer-button">Заказать звонок</button>
+                        <a class="main-button footer-button" href="javascript:;" data-fancybox="" data-type="ajax" data-src="callback.html" data-touch="false">Заказать звонок</a>
                     </div>
                     <!-- /.footer-block__text -->
                     <div class="footer-block__documents">
                         <div class="footer-documents__title">Документы</div>
                         <div class="footer-documents__block">
-                            <a class="footer-documents__link" href="#">Договор</a>
-                            <a class="footer-documents__link" href="#">Реквизиты</a>
-                            <a class="footer-documents__link" href="#">Сертификаты</a>
-                            <a class="footer-documents__link" href="#">Безопасность</a>
-                            <a class="footer-documents__link" href="#">Лицензия</a>
+                            <a class="footer-documents__link" href="files/agreement.docx" download>Договор</a>
+                            <a class="footer-documents__link" href="files/partner_card.pdf" download>Реквизиты</a>
+                            <a class="footer-documents__link" href="files/certificate.pdf" download>Сертификаты</a>
+                            <a class="footer-documents__link" href="files/security.pdf" download>Безопасность</a>
+                            <a class="footer-documents__link" href="files/license.pdf" download>Лицензия</a>
                         </div>
                     </div>
                     <!-- /.footer-block__documents -->
@@ -389,7 +389,7 @@
                         ООО «ТИТАН-ЭКСПРЕСС» © 2016—2020 год<br>
                         Все права защищены.
                     </div>
-                    <a href="#" class="footer-info__privacy">Политика конфиденциальности</a>
+                    <a href="javascript:;" data-fancybox data-type="ajax" data-src="privacy.html" class="footer-info__privacy">Политика конфиденциальности</a>
                 </div>
                 <!-- /.footer-info -->
             </div>
@@ -404,7 +404,11 @@
     <!-- Fancybox CSS -->
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <!-- Fancybox JS -->
-	<script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/modernizr-custom.js"></script>
+    
     
 </body>
 </html>
