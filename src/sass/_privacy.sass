@@ -1,26 +1,28 @@
-#privacy-modal 
-    max-width: 600px
-    width: 100%
-    border: 10px solid $form-color
-    padding: 50px
 .privacy
     &-modal
+        max-width: 600px
+        width: 100%
+        height: auto
+        border: 10px solid $form-color
+        padding: 50px
         &__title
             +bold
             font-size: 22px
             margin-bottom: 50px
             text-align: center
-@media screen and ( max-width: 425px )
+@media screen and ( max-width: 413px )
     .privacy
         &-modal
+            padding: 40px
             &__title
                 font-size: 20px
             &__description
-                font-size: 16px
-@media screen and ( max-width: 359px )
+                font-size: 14px
+@media screen and ( max-width: 347px )
     .privacy
         &-modal
+            padding: 30px
             &__title
                 font-size: 16px
             &__description
-                font-size: 14px
+                font-size: 12px
